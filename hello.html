@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DRISHTI - Simplified Architecture</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+</head>
+<body>
+    <div class="mermaid">
+graph TB
+    %% DATA LAYER
+    subgraph DataLayer [Data Layer]
+        A1[Cameras] --> A2[Data Collection]
+        A3[Sensors] --> A2
+        A4[Drones] --> A2
+        A2 --> A5[Data Preprocessing]
+    end
+    
+    %% AI LAYER
+    subgraph AILayer [AI Processing Layer]
+        B1[Computer Vision] --> B3[Risk Assessment]
+        B2[Time Series Analysis] --> B3
+        B3 --> B4[Alert Generation]
+    end
+    
+    %% APPLICATION LAYER
+    subgraph AppLayer [Application Layer]
+        C1[Backend API] --> C2[Database]
+        C1 --> C3[Alert System]
+        C1 --> C4[Web Dashboard]
+    end
+    
+    %% USERS
+    subgraph UserLayer [User Layer]
+        D1[Mine Operators]
+        D2[Safety Personnel]
+        D3[Management]
+    end
+    
+    %% CONNECTIONS
+    A5 --> B1
+    A5 --> B2
+    B4 --> C1
+    C4 --> D1
+    C4 --> D2
+    C3 --> D3
+    
+    classDef data fill:#42a5f5,color:white
+    classDef ai fill:#ff9800,color:white
+    classDef app fill:#66bb6a,color:white
+    classDef user fill:#b0bec5,color:black
+    
+    class A1,A2,A3,A4,A5 data
+    class B1,B2,B3,B4 ai
+    class C1,C2,C3,C4 app
+    class D1,D2,D3 user
+</div>
+
+<script>mermaid.initialize({startOnLoad:true});</script>
+</body>
+</html>
