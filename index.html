@@ -1,326 +1,530 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Praveen kumawat</title>
+    <title>Praveen - Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=atr"
     />
   </head>
   <body>
     <header>
       <nav class="navbar">
         <div class="logo">
-          <h1>Praveen</h1>
+          <a href="#home" class="logo-link">
+            <span class="initial">P</span>
+            <span class="slash">/</span>
+            <span class="reest">K</span>
+          </a>
         </div>
-        <div class="menu">
-          <ul class="navlist">
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#about">ABout</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#project">project</a></li>
-            <li><a href="#contact">contact</a></li>
+        <div class="nav-icon" id="navToggle">
+          <span class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </span>
+        </div>
+
+        <div class="menu" id="menu">
+          <div class="menu-top">
+            <div class="location">LOCAL / 46° 28' 58.6272" N</div>
+
+            <div class="close" id="menuClose">
+              <span class="material-symbols-outlined">
+                <img src="close.svg" alt="close" />
+              </span>
+            </div>
+
+            <div class="cta menu-cta">
+              <a href="#contact">
+                <span class="bg"></span>
+                <span class="text">
+                  <span data-text="let's connect">let's connect</span>
+                </span>
+
+                <span class="icon">
+                  <img src="arrow.svg" alt="arrow" />
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <ul class="menu-links">
+            <li>
+              <a href="#home">
+                <span class="link-wrapper">
+                  <span class="link-text" data-text="HOME">HOME</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#work">
+                <span class="link-wrapper">
+                  <span class="link-text" data-text="WORK">WORK</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#skills">
+                <span class="link-wrapper">
+                  <span class="link-text" data-text="SKILLS">SKILLS</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#about">
+                <span class="link-wrapper">
+                  <span class="link-text" data-text="ABOUT">ABOUT</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#contact">
+                <span class="link-wrapper">
+                  <span class="link-text" data-text="CONTACT">CONTACT</span>
+                </span>
+              </a>
+            </li>
           </ul>
+
+          <div class="menu-bottom">
+            <span class="copyright">©2024 ALL RIGHTS RESERVED</span>
+            <div class="socials">
+              <a href="#" target="_blank">INSTAGRAM</a>
+              <a href="#" target="_blank">Linkedin</a>
+              <a href="#" target="_blank">behance</a>
+            </div>
+          </div>
         </div>
-        <div class="links">
-          <i class="fa-brands fa-github"></i>
-          <i class="fa-brands fa-linkedin"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <a href="">Hire Me</a>
+
+        <div class="cta">
+          <a href="#contact">
+            <span class="bg"></span>
+            <span class="text">
+              <span data-text="let's connect">let's connect</span>
+            </span>
+
+            <span class="icon">
+              <img src="arrow.svg" alt="arrow" />
+            </span>
+          </a>
         </div>
       </nav>
     </header>
+
     <main>
-      <div class="home">
-        <div class="home-img">
-          <img src="meee.png" alt="" />
-        </div>
-        <div class="home-text">
-          <div class="message">
-            <div class="box">
-              <p>
-                Hello, I'm Praveen Kumawat a Full Stack Web Developer with a
-                passion for creating innovative and user-friendly web
-                applications. With a strong foundation in HTML, CSS, and
-                JavaScript, I specialize in building dynamic and interactive
-                interfaces that enhance user experience. I'm committed to
-                staying up-to-date with the latest industry trends and
-                technologies to deliver exceptional results. My goal is to
-                contribute my skills and expertise to drive success for my
-                clients.
-              </p>
+      <section class="home">
+        <div class="home-container">
+          <!-- Top Text -->
+          <div class="home-intro">
+            <span class="wave-emoji">👋</span>
+            <span class="intro-text"
+              >my name is Praveen Kumawat and I am a</span
+            >
+          </div>
+
+          <!-- Main Heading -->
+          <div class="home-heading">
+            <h1 class="heading-large">Creative</h1>
+            <div class="heading-wrapper">
+              <h1 class="heading-outline">Frontend Developer</h1>
+              <span class="arrow-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 17L17 7M17 7H7M17 7V17"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
             </div>
-            <div class="arrow"></div>
-          </div>
-        </div>
-      </div>
-      <div class="abilites">
-        <h1>Interests</h1>
-        <div class="int-icon">
-          <div class="icon-wrapper">
-            <img src="console.png" alt="Gaming" data-interest="Gaming" />
-            <span class="icon-label">Gaming</span>
           </div>
 
-          <div class="icon-wrapper">
-            <img src="reading-book.png" alt="Reading" data-interest="Reading" />
-            <span class="icon-label">Reading</span>
+          <!-- Bottom Text -->
+          <div class="home-location">
+            <span class="location-text">based in India.</span>
           </div>
+          <div class="home-cta">
+            <!-- Filled Button with Arrow -->
+            <button class="btn-filled">
+              <span class="btn-text">You need a designer</span>
+              <span class="btn-icon">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4 10H16M16 10L10 4M16 10L10 16"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+            </button>
 
-          <div class="icon-wrapper">
-            <img
-              src="travel-and-tourism.png"
-              alt="Travel"
-              data-interest="Travel"
-            />
-            <span class="icon-label">Travel</span>
+            <!-- Outline Button with Arrow -->
+            <button class="btn-outline">
+              <span class="btn-text">You need a photographer</span>
+              <span class="btn-icon">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4 10H16M16 10L10 4M16 10L10 16"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+            </button>
           </div>
-
-          <div class="icon-wrapper">
-            <img src="music.png" alt="Music" data-interest="Music" />
-            <span class="icon-label">Music</span>
-          </div>
-
-          <div class="icon-wrapper">
-            <img src="fast-food.png" alt="Foodie" data-interest="Foodie" />
-            <span class="icon-label">Foodie</span>
-          </div>
-        </div>
-      </div>
-      <div class="expertise">
-        <img src="tree.png" alt="" />
-        <!-- <h1>Area of Expertise</h1>
-        <div class="expertise-icon">
-          <div class="box1"></div>
-          <div class="box2"></div>
-          <div class="box3"></div>
-          <div class="box4"></div>
-          <div class="box5"></div>
-        </div> -->
-      </div>
-      <div class="star">
-        <img src="star.png" alt="" />
-      </div>
-      <div class="style">
-        <div class="line"></div>
-        <div class="line-1">
-          <svg width="280" height="280" viewBox="0 0 60 200">
-            <line
-              x1="30"
-              y1="20"
-              x2="30"
-              y2="280"
-              stroke="#3a1f15"
-              stroke-width="1"
-            />
-          </svg>
-        </div>
-        <div class="line-2">
-          <svg width="280" height="280" viewBox="0 0 60 200">
-            <line
-              x1="30"
-              y1="20"
-              x2="30"
-              y2="280"
-              stroke="#3a1f15"
-              stroke-width="1"
-            />
-          </svg>
-        </div>
-        <div class="line-3">
-          <svg width="280" height="280" viewBox="0 0 60 200">
-            <line
-              x1="30"
-              y1="20"
-              x2="30"
-              y2="280"
-              stroke="#3a1f15"
-              stroke-width="1"
-            />
-          </svg>
-        </div>
-        <div class="line-4">
-          <svg width="280" height="280" viewBox="0 0 60 200">
-            <line
-              x1="30"
-              y1="20"
-              x2="30"
-              y2="280"
-              stroke="#3a1f15"
-              stroke-width="1"
-            />
-          </svg>
-        </div>
-        <div class="line-5">
-          <svg width="280" height="280" viewBox="0 0 60 200">
-            <line
-              x1="30"
-              y1="20"
-              x2="30"
-              y2="280"
-              stroke="#3a1f15"
-              stroke-width="1"
-            />
-          </svg>
-        </div>
-        <div class="line-6">
-          <svg width="280" height="280" viewBox="0 0 60 200">
-            <line
-              x1="30"
-              y1="20"
-              x2="30"
-              y2="280"
-              stroke="#3a1f15"
-              stroke-width="1"
-            />
-          </svg>
-        </div>
-        <div class="line-7">
-          <svg width="280" height="280" viewBox="0 0 60 200">
-            <line
-              x1="30"
-              y1="20"
-              x2="30"
-              y2="280"
-              stroke="#3a1f15"
-              stroke-width="1"
-            />
-          </svg>
-        </div>
-        <div class="line-8">
-          <svg width="280" height="280" viewBox="0 0 60 200">
-            <line
-              x1="30"
-              y1="20"
-              x2="30"
-              y2="280"
-              stroke="#3a1f15"
-              stroke-width="1"
-            />
-          </svg>
-        </div>
-        <div class="line-9">
-          <svg width="280" height="280" viewBox="0 0 60 200">
-            <line
-              x1="30"
-              y1="20"
-              x2="30"
-              y2="280"
-              stroke="#3a1f15"
-              stroke-width="1"
-            />
-          </svg>
-        </div>
-      </div>
-      <div class="home-heading">
-        <h1>
-          <span class="red">P</span>
-          <span class="yellow">o</span>
-          <span class="blue">R</span>
-          <span class="orange">t</span>
-          <span class="green">F</span>
-          <span class="pink">o</span>
-          <span class="sky">L</span>
-          <span class="purple">i</span>
-          <span class="brown">o</span>
-        </h1>
-      </div>
-
-      <section class="about">
-        <div class="about-heading">
-          <h1>
-            <span class="red">A</span>
-            <span class="yellow">b</span>
-            <span class="blue">o</span>
-            <span class="orange">u</span>
-            <span class="green">t</span>
-          </h1>
-        </div>
-
-        <div class="about-text">
-          <h1>Praveen kumawat</h1>
-          <p>
-            Hello, I'm Praveen Kumawat a
-            <span>Full Stack Web Developer</span> with a passion for creating
-            innovative and user-friendly <span>web applications</span>. With a
-            strong foundation in <span>HTML, CSS, and JavaScript</span>, I
-            specialize in building dynamic and interactive interfaces that
-            enhance user experience. I'm committed to staying up-to-date with
-            the latest <span>industry trends</span> and technologies to deliver
-            exceptional results. My goal is to contribute my skills and
-            expertise to drive success for my clients.
-          </p>
-        </div>
-        <div class="about-img">
-          <!-- <img src="demo.png" alt="" /> -->
-        </div>
-        <div class="achivement">
-          <div class="achivement-text">
-            <h1>My Achivements</h1>
-          </div>
-          <div class="achivement-content"></div>
-        </div>
-        <div class="achivement-list">
-          <h1>Behind the Art</h1>
-          <ul>
-            <li>
-              <i class="fa-solid fa-xmark"></i> Creative Minds: Building unique
-              digital experiences.
-            </li>
-            <li>
-              <i class="fa-solid fa-xmark"></i> User-Centric: Crafting
-              intuitive, engaging interfaces.
-            </li>
-            <li>
-              <i class="fa-solid fa-xmark"></i> Tech Experts: Skilled in web,
-              UI/UX, and AI solutions.
-            </li>
-            <li>
-              <i class="fa-solid fa-xmark"></i> Detail-Focused: Delivering
-              polished, high-quality work.
-            </li>
-            <li>
-              <i class="fa-solid fa-xmark"></i> Cultural Fusion: Blending Indian
-              roots with global style.
-            </li>
-            <li>
-              <i class="fa-solid fa-xmark"></i> Impactful: Elevating brands with
-              innovative solutions.
-            </li>
-          </ul>
         </div>
       </section>
 
-      <section class="skills">
-        <div class="skills-heading">
-          <h1>
-            <span class="red">S</span>
-            <span class="yellow">k</span>
-            <span class="blue">i</span>
-            <span class="orange">l</span>
-            <span class="green">l</span>
-            <span class="pink">s</span>
-          </h1>
+    <!-- ============================================
+ABOUT SECTION - PERFECT & ORGANIZED
+============================================ -->
+<section class="about" id="about">
+<div class="about-container">
+<!-- Top Section - Introduction -->
+<div class="about-intro">
+<!-- Left Side - Text Content -->
+<div class="intro-content">
+<div class="intro-label">
+<span class="label-line"></span>
+<span class="label-text">GET TO KNOW ME</span>
+</div>
+
+<h2 class="intro-heading">
+HEY, I'M<br />
+PRAVEEN KUMAWAT
+</h2>
+
+<p class="intro-description">
+A passionate <strong>Frontend Developer</strong> based in India,
+dedicated to crafting beautiful and functional digital
+experiences that make a difference.
+</p>
+</div>
+
+<!-- Right Side - Profile Image -->
+<div class="intro-image">
+<div class="image-frame">
+<img src="me.png" alt="Praveen Kumawat - Frontend Developer" />
+</div>
+</div>
+</div>
+
+<!-- About Me Section -->
+<div class="about-content">
+<!-- Section Title -->
+<div class="content-header">
+<h2 class="content-title">ABOUT ME</h2>
+<div class="title-underline"></div>
+</div>
+
+<!-- Content Grid -->
+<div class="content-grid">
+<!-- Left Side - Who I Am -->
+<div class="content-left">
+<div class="handwritten-label">
+<span class="handwritten">Who I am!</span>
+</div>
+</div>
+
+<!-- Right Side - Description -->
+<div class="content-right">
+<p class="about-text">
+With <strong>three years of experience</strong> in web
+development, I specialize in creating responsive,
+high-performing websites and user interfaces. I'm passionate
+about clean code, smooth animations, and creating experiences
+that users love.
+</p>
+<p class="about-text">
+My goal is to combine
+<strong>creativity and strategy</strong> to produce tangible
+results that help businesses succeed online. I believe in
+continuous learning and staying up-to-date with the latest
+technologies and best practices.
+</p>
+</div>
+</div>
+</div>
+
+<!-- Stats Section -->
+<div class="about-stats">
+<div class="stat-item">
+<span class="stat-number">3+</span>
+<span class="stat-label">Years Experience</span>
+</div>
+<div class="stat-item">
+<span class="stat-number">50+</span>
+<span class="stat-label">Projects Completed</span>
+</div>
+<div class="stat-item">
+<span class="stat-number">30+</span>
+<span class="stat-label">Happy Clients</span>
+</div>
+<div class="stat-item">
+<span class="stat-number">100%</span>
+<span class="stat-label">Client Satisfaction</span>
+</div>
+</div>
+
+<!-- CTA Section -->
+<div class="about-cta">
+<a href="resume.pdf" download class="cta-button">
+<span class="cta-bg"></span>
+<span class="cta-text">Download Resume</span>
+<span class="cta-icon">
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+<path
+d="M10 3V15M10 15L5 10M10 15L15 10M3 17H17"
+stroke="currentColor"
+stroke-width="2"
+stroke-linecap="round"
+stroke-linejoin="round"
+/>
+</svg>
+</span>
+</a>
+<a href="#contact" class="cta-button secondary">
+<span class="cta-bg"></span>
+<span class="cta-text">Let's Talk</span>
+<span class="cta-icon">
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+<path
+d="M3 10H17M17 10L10 3M17 10L10 17"
+stroke="currentColor"
+stroke-width="2"
+stroke-linecap="round"
+stroke-linejoin="round"
+/>
+</svg>
+</span>
+</a>
+</div>
+
+<!-- Contact Section - Enhanced -->
+<div class="about-contact">
+<div class="contact-wrapper">
+
+<!-- Left Side - CTA Content -->
+<div class="contact-cta">
+<span class="cta-label">LET'S WORK TOGETHER</span>
+<h3 class="cta-heading">
+Ready to Start<br>
+a Project?
+</h3>
+<p class="cta-description">
+I'm always open to discussing new projects, creative ideas,
+or opportunities to be part of your vision.
+</p>
+<div class="cta-features">
+<div class="feature-item">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+<path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+<span>Fast Response Time</span>
+</div>
+<div class="feature-item">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+<path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+<span>Quality Work Guaranteed</span>
+</div>
+<div class="feature-item">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+<path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+<span>Flexible & Collaborative</span>
+</div>
+</div>
+</div>
+
+<!-- Right Side - Contact Methods -->
+<div class="contact-methods">
+
+<!-- Email Card -->
+<a href="mailto:praveen@example.com" class="contact-card">
+<div class="card-icon">
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+<rect x="4" y="8" width="24" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+<path d="M4 10L16 18L28 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+<div class="card-content">
+<span class="card-label">Email Me</span>
+<span class="card-value">praveen@example.com</span>
+</div>
+<div class="card-arrow">
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+<path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+</a>
+
+<!-- Phone Card -->
+<a href="tel:+919876543210" class="contact-card">
+<div class="card-icon">
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+<path d="M8 4H12L14 10L11 12C12 14 14 16 16 17L18 14L24 16V20C24 21.1046 23.1046 22 22 22C13.7157 22 7 15.2843 7 7C7 5.89543 7.89543 5 9 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+<div class="card-content">
+<span class="card-label">Call Me</span>
+<span class="card-value">+91 98765 43210</span>
+</div>
+<div class="card-arrow">
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+<path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+</a>
+
+<!-- WhatsApp Card -->
+<a href="https://wa.me/919876543210" target="_blank" class="contact-card highlight">
+<div class="card-icon">
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+<path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 18.3 4.7 20.4 5.9 22.2L4.5 27.5L10 26.1C11.8 27.3 13.9 28 16 28Z" stroke="currentColor" stroke-width="2"/>
+<path d="M12 14C12 14 12.5 12 16 12C19.5 12 20 14 20 14C20 16 18 16.5 18 18V19M18 22H18.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>
+</div>
+<div class="card-content">
+<span class="card-label">WhatsApp</span>
+<span class="card-value">Quick Message</span>
+</div>
+<div class="card-arrow">
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+<path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+</a>
+
+      </section>
+      
+
+      <section class="contact-minimal" id="contact">
+        <div class="contact-container">
+          <div class="contact-left">
+            <h2 class="contact-title">
+              contact me
+            </h2>
+            <div class="contact-info">
+           <p class="info-location">Bangalore, India</p>
+<p class="info-year">2024</p>
+            </div>
+
+            <div class="contact-hours">
+             <p class="hours-title">Office hours</p>
+<p class="hours-days">Monday - Friday</p>
+<p class="hours-time">11 AM - 2 PM</p>
+            </div>
+          </div>
+
+          <div class="contact-right">
+            <form action="#" class="minimal-form" id="minimalForm">
+              <!-- Name Fields -->
+<div class="form-section">
+<label class="field-label">Name (required)</label>
+<div class="name-row">
+<div class="field-group">
+<input
+type="text"
+name="firstName"
+placeholder=""
+required
+/>
+<span class="field-sublabel">First Name</span>
+</div>
+<div class="field-group">
+<input
+type="text"
+name="lastName"
+placeholder=""
+required
+/>
+<span class="field-sublabel">Last Name</span>
+</div>
+</div>
+</div>
+
+<!-- Service Dropdown -->
+<div class="form-section">
+<label class="field-label">Service</label>
+<select name="service" class="field-select" required>
+<option value="">Select a service</option>
+<option value="web-development">Web Development</option>
+<option value="ui-ux-design">UI/UX Design</option>
+<option value="consulting">Consulting</option>
+<option value="other">Other</option>
+</select>
+</div>
+
+<!-- Email -->
+<div class="form-section">
+<label class="field-label">Email (required)</label>
+<input
+type="email"
+name="email"
+placeholder=""
+required
+/>
+<label class="checkbox-label">
+<input type="checkbox" name="newsletter" />
+<span>Sign up for news and updates</span>
+</label>
+</div>
+
+<!-- Project Description -->
+<div class="form-section">
+<label class="field-label">Project description</label>
+<textarea
+name="message"
+rows="4"
+placeholder=""
+></textarea>
+</div>
+
+<!-- Submit Button -->
+<button type="submit" class="submit-button">
+Submit
+</button>
+
+</form>
+</div>
+
+</div>
+</section>
+            </form>
+          </div>
         </div>
       </section>
     </main>
+    <footer>
+      
+    </footer>
 
-    <footer></footer>
-
-    <script></script>
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
